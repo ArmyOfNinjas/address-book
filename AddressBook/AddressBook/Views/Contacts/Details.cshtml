@@ -3,7 +3,47 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.Contact.FirstName @Model.Contact.LastName</h1>
+            </div>
+
+            <div class="card-body text-center">
+                <img class="card-img-top" src="~/images/noimage.jpg" />
+
+                <h4>Phone Number : @Model.Contact.PhoneNumber</h4>
+                <h4>Street Name : @Model.Contact.StreetName.</h4>
+                <h4>City : @Model.Contact.City</h4>
+                <h4>Province : @Model.Contact.Province</h4>
+                <h4>Postal Code : @Model.Contact.PostalCode</h4>
+                <h4>Country : @Model.Contact.Country</h4>
+
+            </div>
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-primary">Back</a>
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/CustomScript.js"></script>
+}
+
+
+
+
+
+
+
+
+@*<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
 </head>
@@ -22,4 +62,4 @@
     </div>
 
 </body>
-</html>
+</html>*@

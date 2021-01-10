@@ -52,9 +52,16 @@ namespace AddressBook.Controllers
 		}
 
 		// GET: ContactsController/Create
-		public ActionResult Create()
+		[HttpGet]
+		public ViewResult Create()
 		{
 			return View();
+		}
+		[HttpPost]
+		public RedirectToActionResult Create(Contact contact)
+		{
+			var newContact = _contactsRepository.Add(contact);
+			return RedirectToAction("details", new { id = newContact.ContactId });
 		}
 
 		// POST: ContactsController/Create

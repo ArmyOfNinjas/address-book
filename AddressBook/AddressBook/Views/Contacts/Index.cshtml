@@ -3,7 +3,26 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<div class="card-deck">
+    @foreach (var contact in Model.Contacts)
+    {
+        <div class="card m-3">
+            <div class="card-header">
+                <h3>@contact.FirstName @contact.LastName</h3>
+            </div>
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-primary">View</a>
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    }
+</div>
+
+
+@*<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
 </head>
@@ -31,4 +50,4 @@
     </table>
 
 </body>
-</html>
+</html>*@

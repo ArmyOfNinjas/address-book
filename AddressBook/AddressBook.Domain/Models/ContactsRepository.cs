@@ -32,5 +32,12 @@ namespace AddressBook.Domain.Models
 		{
 			return _contacts;
 		}
+
+		public Contact Add(Contact contact)
+		{
+			contact.ContactId = _contacts.Max(x => x.ContactId) + 1;
+			_contacts.Add(contact);
+			return contact;
+		}
 	}
 }
