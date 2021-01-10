@@ -1,5 +1,6 @@
 ﻿
 @model AddressBook.ViewModels.ContactDetailsViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -24,9 +25,10 @@
 
             </div>
             <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Back</a>
-                <a href="#" class="btn btn-primary">Edit</a>
-                <a href="#" class="btn btn-danger">Delete</a>
+                @*<a href="/contacts" class="btn btn-dark">Back</a>*@
+                <a asp-controller="contacts" asp-action="" class="btn btn-dark">Back</a>
+                <a href="#" class="btn btn-dark">Edit</a>
+                <a href="#" class="btn btn-dark">Delete</a>
             </div>
         </div>
     </div>
@@ -44,22 +46,22 @@
 
 
 @*<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <h1>@Model.PageTitle</h1>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>@Model.PageTitle</h1>
 
 
-    <div>
-        Id: @Model.Contact.ContactId
-    </div>
-    <div>
-        First Name: @Model.Contact.FirstName
-    </div>
-    <div>
-        Last Name: @Model.Contact.LastName
-    </div>
+        <div>
+            Id: @Model.Contact.ContactId
+        </div>
+        <div>
+            First Name: @Model.Contact.FirstName
+        </div>
+        <div>
+            Last Name: @Model.Contact.LastName
+        </div>
 
-</body>
-</html>*@
+    </body>
+    </html>*@

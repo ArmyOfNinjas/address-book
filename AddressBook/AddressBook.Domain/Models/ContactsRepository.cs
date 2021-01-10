@@ -11,10 +11,10 @@ namespace AddressBook.Domain.Models
 
 		public ContactsRepository()
 		{
-			_contacts = new List<Contact>() 
+			_contacts = new List<Contact>()
 			{
-				new Contact() {ContactId=1, FirstName = "Leo2", LastName="Malanowski2", User = new User(){UserName = "LeonidM" } },
-				new Contact() {ContactId=2, FirstName = "Leo3", LastName="Malanowski3", User = new User(){UserName = "LeonidM" } }
+				new Contact() {ContactId=1, FirstName = "Leo2", LastName="Malanowski2", User = new User(){UserName = "LeonidM", FirstName="Leonid" } },
+				new Contact() {ContactId=2, FirstName = "Leo3", LastName="Malanowski3", User = new User(){UserName = "LeonidM" ,FirstName="Leonid"} }
 			};
 		}
 
