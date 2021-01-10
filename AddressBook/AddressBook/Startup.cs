@@ -29,6 +29,7 @@ namespace AddressBook
 		{
 			services.AddControllersWithViews();
 			services.AddSingleton<IContactsRepository, ContactsRepository>();
+			services.AddSingleton<IUserRepository, UserRepository>();
 
 			services.Configure<Database>(Configuration.GetSection("database"));
 

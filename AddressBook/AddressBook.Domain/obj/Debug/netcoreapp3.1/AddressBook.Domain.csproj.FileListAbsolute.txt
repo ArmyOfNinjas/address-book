@@ -15,3 +15,4 @@ C:\GitHub\address-book2\AddressBook\AddressBook.Domain\bin\Debug\netcoreapp3.1\A
 C:\GitHub\address-book2\AddressBook\AddressBook.Domain\bin\Debug\netcoreapp3.1\AddressBook.Domain.pdb
 C:\GitHub\address-book2\AddressBook\AddressBook.Domain\obj\Debug\netcoreapp3.1\AddressBook.Domain.dll
 C:\GitHub\address-book2\AddressBook\AddressBook.Domain\obj\Debug\netcoreapp3.1\AddressBook.Domain.pdb
+C:\GitHub\address-book2\AddressBook\AddressBook.Domain\obj\Debug\netcoreapp3.1\AddressBook.Domain.csprojAssemblyReference.cache

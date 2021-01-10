@@ -64,20 +64,20 @@ namespace AddressBook.Controllers
 			return RedirectToAction("details", new { id = newContact.ContactId });
 		}
 
-		// POST: ContactsController/Create
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public ActionResult Create(IFormCollection collection)
-		{
-			try
-			{
-				return RedirectToAction(nameof(Index));
-			}
-			catch
-			{
-				return View();
-			}
-		}
+		//// POST: ContactsController/Create
+		//[HttpPost]
+		//[ValidateAntiForgeryToken]
+		//public ActionResult Create(IFormCollection collection)
+		//{
+		//	try
+		//	{
+		//		return RedirectToAction(nameof(Index));
+		//	}
+		//	catch
+		//	{
+		//		return View();
+		//	}
+		//}
 
 		// GET: ContactsController/Edit/5
 		public ActionResult Edit(int id)
