@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\address-book\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj": {}
+    "C:\\GitHub\\address-book2\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\address-book\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj": {
+    "C:\\GitHub\\address-book2\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\address-book\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj",
+        "projectUniqueName": "C:\\GitHub\\address-book2\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj",
         "projectName": "AddressBook.Domain",
-        "projectPath": "C:\\GitHub\\address-book\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj",
+        "projectPath": "C:\\GitHub\\address-book2\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj",
         "packagesPath": "C:\\Users\\Leonidm\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\address-book\\AddressBook\\AddressBook.Domain\\obj\\",
+        "outputPath": "C:\\GitHub\\address-book2\\AddressBook\\AddressBook.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -55,9 +55,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

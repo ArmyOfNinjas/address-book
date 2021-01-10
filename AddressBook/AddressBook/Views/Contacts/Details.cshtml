@@ -1,0 +1,25 @@
+﻿
+@model AddressBook.ViewModels.ContactDetailsViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>@Model.PageTitle</h1>
+
+
+    <div>
+        Id: @Model.Contact.ContactId
+    </div>
+    <div>
+        First Name: @Model.Contact.FirstName
+    </div>
+    <div>
+        Last Name: @Model.Contact.LastName
+    </div>
+
+</body>
+</html>

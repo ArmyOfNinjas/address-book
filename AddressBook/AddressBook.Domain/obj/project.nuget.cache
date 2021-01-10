@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z1x9pYoxs1YIHjhJJ9r7ZlDA4YqHnsWRB2FooaMo8CC1gTEzFxBLpBzcHbrMIkHAR20TafOB4/atKzS71WMGkQ==",
+  "dgSpecHash": "2DRqSLfvieY6rwYjnvXvc87LsgWLzar8jEVPo7yY/NYNJ2tDhArrWxo2m9YIo3xnIB4OtnY8Pl9qiFLTric53w==",
   "success": true,
-  "projectFilePath": "C:\\GitHub\\address-book\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj",
+  "projectFilePath": "C:\\GitHub\\address-book2\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
