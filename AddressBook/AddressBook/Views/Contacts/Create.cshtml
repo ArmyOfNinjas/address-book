@@ -6,24 +6,7 @@
 }
 
 <div class="container">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark row justify-content-spacebetween">
-        <a class="navbar-brand" asp-controller="home" asp-action="index">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" asp-controller="contacts" asp-action="index">List</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" asp-controller="contacts" asp-action="create">Create</a>
-                </li>
-            </ul>
-        </div>
-        <h2 style="color: lightgray">@ViewBag.Title</h2>
-    </nav>
+    <h2 style="color: lightgray">@ViewBag.Title</h2>
 </div>
 
 <form asp-controller="contacts" asp-action="create" method="post" class="mt-3">
