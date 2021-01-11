@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AddressBook.db\AddressBook.db.csproj" />
-    <ProjectReference Include="..\AddressBook.Domain\AddressBook.Domain.csproj" />
   </ItemGroup>
 
 </Project>

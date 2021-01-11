@@ -167,9 +167,6 @@
             "projectReferences": {
               "C:\\GitHub\\address-book2\\AddressBook\\AddressBook.db\\AddressBook.db.csproj": {
                 "projectPath": "C:\\GitHub\\address-book2\\AddressBook\\AddressBook.db\\AddressBook.db.csproj"
-              },
-              "C:\\GitHub\\address-book2\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj": {
-                "projectPath": "C:\\GitHub\\address-book2\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj"
               }
             }
           }
