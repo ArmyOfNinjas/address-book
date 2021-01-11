@@ -9,5 +9,8 @@ namespace AddressBook.Domain.Models
 		Contact GetContact(int id);
 		IEnumerable<Contact> GetContacts(string userName);
 		IEnumerable<Contact> GetAllContacts();
+		Contact Add(Contact contact);
+		Contact Update(Contact contact);
+		Contact Delete(int id);
 	}
 }

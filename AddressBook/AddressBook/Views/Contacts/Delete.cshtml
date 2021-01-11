@@ -1,0 +1,41 @@
+﻿
+@model AddressBook.ViewModels.ContactDetailsViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.Contact.FirstName @Model.Contact.LastName</h1>
+            </div>
+
+            <div class="card-body text-center">
+                <h4>Phone Number : @Model.Contact.PhoneNumber</h4>
+                <h4>Street Name : @Model.Contact.StreetName.</h4>
+                <h4>City : @Model.Contact.City</h4>
+                <h4>Province : @Model.Contact.Province</h4>
+                <h4>Postal Code : @Model.Contact.PostalCode</h4>
+                <h4>Country : @Model.Contact.Country</h4>
+
+            </div>
+            <div class="card-footer text-center">
+                <h3>Are you sure you want to delete this contact?</h3>
+                <form asp-controller="contacts" asp-action="delete" method="post">
+                    <button type="submit" class="btn btn-dark">Yes</button>
+                    <a asp-controller="contacts" asp-action="" class="btn btn-dark m-1">No</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/CustomScript.js"></script>
+}
+
+
+

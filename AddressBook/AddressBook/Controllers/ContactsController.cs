@@ -52,39 +52,55 @@ namespace AddressBook.Controllers
 		}
 
 		// GET: ContactsController/Create
-		public ActionResult Create()
+		[HttpGet]
+		public ViewResult Create()
 		{
 			return View();
 		}
 
-		// POST: ContactsController/Create
+
 		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public ActionResult Create(IFormCollection collection)
+		public RedirectToActionResult Create(Contact contact)
 		{
-			try
-			{
-				return RedirectToAction(nameof(Index));
-			}
-			catch
-			{
-				return View();
-			}
+			var newContact = _contactsRepository.Add(contact);
+			return RedirectToAction("details", new { id = newContact.ContactId });
 		}
+
 
 		// GET: ContactsController/Edit/5
-		public ActionResult Edit(int id)
+		[HttpGet]
+		public ViewResult Edit(int id)
 		{
-			return View();
+			Contact contact = _contactsRepository.GetContact(id);
+
+			ContactEditViewModel editContactViewModel = new ContactEditViewModel()
+			{
+				Contact = contact,
+				PageTitle = "Edit Contact"
+			};
+			return View(editContactViewModel);
 		}
 
 		// POST: ContactsController/Edit/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Edit(int id, IFormCollection collection)
+		public ActionResult Edit(ContactEditViewModel model)
 		{
 			try
 			{
+				Contact contact = _contactsRepository.GetContact(model.Contact.ContactId);
+
+				contact.FirstName = model.Contact.FirstName;
+				contact.LastName = model.Contact.LastName;
+				contact.PhoneNumber = model.Contact.PhoneNumber;
+				contact.StreetName = model.Contact.StreetName;
+				contact.City = model.Contact.City;
+				contact.Province = model.Contact.Province;
+				contact.PostalCode = model.Contact.PostalCode;
+				contact.Country = model.Contact.Country;
+
+				_contactsRepository.Update(contact);
+
 				return RedirectToAction(nameof(Index));
 			}
 			catch
@@ -94,18 +110,28 @@ namespace AddressBook.Controllers
 		}
 
 		// GET: ContactsController/Delete/5
-		public ActionResult Delete(int id)
+		[HttpGet]
+		public ViewResult Delete(int id)
 		{
-			return View();
+			ContactDetailsViewModel contactDetailsViewModel = new ContactDetailsViewModel()
+			{
+				Contact = _contactsRepository.GetContact(id),
+				PageTitle = "Delete Contact"
+			};
+			return View(contactDetailsViewModel);
+
+			//Contact contact = _contactsRepository.Delete(id);
+			//return RedirectToAction("contacts");
 		}
 
-		// POST: ContactsController/Delete/5
+		//POST: ContactsController/Delete/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public ActionResult Delete(int id, IFormCollection collection)
 		{
 			try
 			{
+				Contact contact = _contactsRepository.Delete(id);
 				return RedirectToAction(nameof(Index));
 			}
 			catch

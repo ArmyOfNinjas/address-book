@@ -1,0 +1,74 @@
+﻿
+@model AddressBook.ViewModels.ContactEditViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <h2 style="color: lightgray">@Model.PageTitle</h2>
+</div>
+
+
+
+<form asp-controller="contacts" asp-action="edit" method="post" class="mt-3">
+    <input hidden asp-for="Contact.ContactId" />
+    <div class="form-group row">
+        <label asp-for="Contact.FirstName" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Contact.FirstName" class="form-control" placeholder="First Name">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Contact.LastName" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Contact.LastName" class="form-control" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Contact.PhoneNumber" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Contact.PhoneNumber" class="form-control" placeholder="Phone">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Contact.StreetName" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Contact.StreetName" class="form-control" placeholder="Street Name">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Contact.City" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Contact.City" class="form-control" placeholder="City">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Contact.Province" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Contact.Province" class="form-control" placeholder="Province">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Contact.PostalCode" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Contact.PostalCode" class="form-control" placeholder="Postal Code">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Contact.Country" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Contact.Country" class="form-control" placeholder="Country">
+        </div>
+    </div>
+
+
+
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-dark">Update</button>
+            <a class="btn btn-dark" asp-controller="contacts" asp-action="index">Cancel</a>
+        </div>
+    </div>
+</form>

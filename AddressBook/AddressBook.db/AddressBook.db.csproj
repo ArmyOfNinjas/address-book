@@ -10,11 +10,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AddressBook.Domain\AddressBook.Domain.csproj" />
+    <Folder Include="Attributes\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Attributes\" />
+    <ProjectReference Include="..\AddressBook.Domain\AddressBook.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,26 @@
+﻿@model AddressBook.ViewModels.RegisterViewModel
+
+@{
+    ViewBag.Title = "Sign In";
+}
+
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h1>Sign In</h1>
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserName">User Name</label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-dark">Sign In</button>
+        </form>
+    </div>
+</div>

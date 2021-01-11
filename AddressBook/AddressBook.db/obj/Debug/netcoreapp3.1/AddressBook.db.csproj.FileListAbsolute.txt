@@ -15,6 +15,7 @@ C:\GitHub\address-book2\AddressBook\AddressBook.db\bin\Debug\netcoreapp3.1\Addre
 C:\GitHub\address-book2\AddressBook\AddressBook.db\bin\Debug\netcoreapp3.1\AddressBook.db.pdb
 C:\GitHub\address-book2\AddressBook\AddressBook.db\bin\Debug\netcoreapp3.1\AddressBook.Domain.dll
 C:\GitHub\address-book2\AddressBook\AddressBook.db\bin\Debug\netcoreapp3.1\AddressBook.Domain.pdb
+C:\GitHub\address-book2\AddressBook\AddressBook.db\obj\Debug\netcoreapp3.1\AddressBook.db.csprojAssemblyReference.cache
 C:\GitHub\address-book2\AddressBook\AddressBook.db\obj\Debug\netcoreapp3.1\AddressBook.db.AssemblyInfoInputs.cache
 C:\GitHub\address-book2\AddressBook\AddressBook.db\obj\Debug\netcoreapp3.1\AddressBook.db.AssemblyInfo.cs
 C:\GitHub\address-book2\AddressBook\AddressBook.db\obj\Debug\netcoreapp3.1\AddressBook.db.csproj.CoreCompileInputs.cache

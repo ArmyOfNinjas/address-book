@@ -28,7 +28,9 @@ namespace AddressBook
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllersWithViews();
-			services.AddSingleton<IContactsRepository, ContactsRepository>();
+			//services.AddSingleton<ICurrentUserRepository, CurrentUserRepository>();
+			services.AddScoped<IContactsRepository, ContactsRepository>();
+			//services.AddScoped<IUserRepository, UserRepository>();
 
 			services.Configure<Database>(Configuration.GetSection("database"));
 
@@ -65,16 +67,11 @@ namespace AddressBook
 
 			app.UseAuthorization();
 
-			//app.UseEndpoints(endpoints =>
-			//{
-			//	endpoints.MapControllers();
-			//});
-
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapControllerRoute(
 					name: "default",
-					pattern: "{controller=Home}/{action=Index}/{id?}");
+					pattern: "{controller=Account}/{action=Register}/{id?}");
 			});
 
 		}

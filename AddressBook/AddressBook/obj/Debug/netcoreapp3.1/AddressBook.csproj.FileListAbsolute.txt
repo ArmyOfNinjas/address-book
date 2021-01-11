@@ -157,6 +157,7 @@ C:\GitHub\address-book\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\Microsoft
 C:\GitHub\address-book\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Contacts\List.cshtml.g.cs
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\appsettings.json
+C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\libman.json
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\AddressBook.exe
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\AddressBook.deps.json
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\AddressBook.runtimeconfig.json
@@ -177,6 +178,7 @@ C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\Microsof
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\GitHub\address-book2\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -295,7 +297,9 @@ C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\scopedcs
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\AddressBook.TagHelpers.input.cache
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\AddressBook.TagHelpers.output.cache
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\AddressBook.RazorCoreGenerate.cache
+C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Contacts\Create.cshtml.g.cs
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Contacts\Details.cshtml.g.cs
+C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Contacts\Edit.cshtml.g.cs
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Contacts\Index.cshtml.g.cs
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Contacts\List.cshtml.g.cs
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
@@ -312,3 +316,7 @@ C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\AddressB
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\AddressBook.dll
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\AddressBook.pdb
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\AddressBook.genruntimeconfig.cache
+C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Contacts\Delete.cshtml.g.cs
+C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
+C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

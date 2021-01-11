@@ -26,25 +26,22 @@ namespace AddressBook.db
 			.WithOne(i => i.User)
 			.HasForeignKey(b => b.UserId);
 
+
 			modelBuilder.Entity<User>()
 			.HasData(
-				new User
+				new
 				{
+					UserId = 1,
 					UserName = "LeonidM",
 					Password = "password123",
 					FirstName = "Leonid",
 					LastName = "Malanowski",
-					Contacts = new List<Contact>()
-					{
-						new Contact { FirstName = "Mike", LastName = "Smith" },
-						new Contact { FirstName = "John", LastName = "White" },
-					}
 				});
 
-			//modelBuilder.Entity<Contact>()
-			//.HasData(
-			//	new Contact { FirstName = "Leonid", LastName = "Malanowski" });
-
+			modelBuilder.Entity<Contact>()
+			.HasData(
+				new { ContactId = 1, FirstName = "Mike", LastName = "Smith", UserId = 1 },
+				new { ContactId = 2, FirstName = "John", LastName = "White", UserId = 1 });
 		}
 	}
 }
