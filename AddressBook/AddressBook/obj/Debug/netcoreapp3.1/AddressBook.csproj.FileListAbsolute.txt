@@ -319,3 +319,4 @@ C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\AddressB
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Contacts\Delete.cshtml.g.cs
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
 C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\GitHub\address-book2\AddressBook\AddressBook\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

@@ -13,5 +13,11 @@ namespace AddressBook.Controllers
 		{
 			return View();
 		}
+
+		[HttpGet]
+		public IActionResult Login()
+		{
+			return View();
+		}
 	}
 }
